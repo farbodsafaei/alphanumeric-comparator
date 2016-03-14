@@ -22,7 +22,7 @@ import java.util.Locale;
 import java.util.Objects;
 
 /**
- * <p>An alpha-numeric comparator for comparing strings in a human readable format. 
+ * <p>An alphanumeric comparator for comparing strings in a human readable format. 
  * It uses a combination numeric and alphabetic comparisons to compare two strings.
  * This class uses standard Java classes, independent of 3rd party libraries.<p>
  * 
@@ -53,29 +53,23 @@ import java.util.Objects;
  * For given list of strings:
  * 
  * <blockquote><pre>
+ * b
  * e
  * ě
  * f
- * è</pre></blockquote>
+ * è
+ * g
+ * k</pre></blockquote>
  * 
  * Using a regular lexicographical sort e.g. {@link java.util.Collections#sort(java.util.List)}, will 
  * sort the collection in the following order:
  * 
- * <blockquote><pre>
- * e
- * è
- * ě
- * f</pre></blockquote>
+ * <blockquote><pre>[b, e, f, g, k, è, ě]</pre></blockquote>
  * 
  * However using this class because of utilizing a {@link java.text.Collator}, the previous values will be
  * sorted in following order:
  * 
- * <blockquote><pre>
- * e
- * f
- * è
- * ě
- * </pre></blockquote>
+ * <blockquote><pre>[b, e, è, ě, f, g, k]</pre></blockquote>
  * 
  * @author Farbod Safaei - farbod@binaryheart.com
  *
@@ -89,7 +83,7 @@ public class AlphaNumericComparator implements Comparator<String> {
 	 * 
 	 * @see com.binaryheart.common.comparator.AlphaNumericComparator#AlphaNumericComparator(Locale)
 	 */
-	AlphaNumericComparator() {
+	public AlphaNumericComparator() {
 		collator = Collator.getInstance();
 	}
 
