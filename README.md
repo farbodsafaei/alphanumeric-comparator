@@ -13,11 +13,11 @@ For given list of strings:
 
 A regular lexicographical sort, e.g. ```java.util.Collections.sort()```, sorts the above list in the following order:
 
-***[file-01.doc, file-03.doc, file-2.doc]***
+**[file-01.doc, file-03.doc, file-2.doc]**
 
 However using ```AlphaNumericComparator```, the list will be sorted in a more meaningful and readable way:
 
-***[file-01.doc, file-2.doc, file-03.doc]***
+**[file-01.doc, file-2.doc, file-03.doc]**
 
 #### Example #2
 For the following list of characters/strings: 
