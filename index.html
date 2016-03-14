@@ -36,9 +36,9 @@
 <h1>
 <a id="alphanumeric-comparator" class="anchor" href="#alphanumeric-comparator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>alphanumeric-comparator</h1>
 
-<p>An alphanumeric comparator in Java, for comparing strings in a human readable format. It uses a combination numeric and alphabetic comparisons to compare two strings. This class uses standard Java classes and is independent of any 3rd party libraries.</p>
+<p>An alphanumeric comparator in Java, for comparing strings in a human readable format. It uses a combination of numeric and alphabetic comparisons to compare two strings. This class uses standard Java classes and is independent of any 3rd party libraries.</p>
 
-<p>Additionally this comparator uses <code>java.text.Collator</code> class to correctly sort strings containing special Unicode characters like  Umlauts or other similar letters of alphabet in different languages, such as: <strong>å</strong>, <strong>è</strong>, <strong>ü</strong>, <strong>ö</strong>, <strong>ø</strong>, or <strong>ý</strong>.</p>
+<p>Additionally this comparator uses <code>java.text.Collator</code> class to correctly sort strings containing special characters like Umlauts or similar alphabet letters in different languages, such as: <strong>å</strong>, <strong>è</strong>, <strong>ü</strong>, <strong>ö</strong>, <strong>ø</strong>, or <strong>ý</strong>.</p>
 
 <h4>
 <a id="example-1" class="anchor" href="#example-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example #1</h4>
@@ -51,13 +51,13 @@
 <li>file-03.doc</li>
 </ul>
 
-<p>The regular lexicographical sorts, e.g. <code>java.util.Collections.sort()</code>, sorts the above list in following order:</p>
+<p>A regular lexicographical sort, e.g. <code>java.util.Collections.sort()</code>, sorts the above list in the following order:</p>
 
-<p><strong><em>[file-01.doc, file-03.doc, file-2.doc]</em></strong></p>
+<p><strong>[file-01.doc, file-03.doc, file-2.doc]</strong></p>
 
-<p>However using <code>AlphaNumericComparator</code>, the list will be sorter in more meaningful and readable way:</p>
+<p>However using <code>AlphaNumericComparator</code>, the list will be sorted in a more meaningful and readable way:</p>
 
-<p><strong><em>[file-01.doc, file-2.doc, file-03.doc]</em></strong></p>
+<p><strong>[file-01.doc, file-2.doc, file-03.doc]</strong></p>
 
 <h4>
 <a id="example-2" class="anchor" href="#example-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example #2</h4>
@@ -74,7 +74,7 @@
 <li>g</li>
 </ul>
 
-<p>The regular lexicographical sorts, e.g. <code>java.util.Collections.sort()</code>, sorts the above list in following order:</p>
+<p>A regular lexicographical sort, e.g. <code>java.util.Collections.sort()</code>, sorts the above list in the following order:</p>
 
 <p><strong>[b, e, f, g, k, è, ě]</strong></p>
 
@@ -85,7 +85,7 @@
 <h4>
 <a id="how-to" class="anchor" href="#how-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To</h4>
 
-<p>Just pass the comparator as a parameter when sorting a list:</p>
+<p>Simply pass the comparator as a parameter when sorting a list:</p>
 
 <div class="highlight highlight-source-java"><pre><span class="pl-k">List&lt;<span class="pl-smi">String</span>&gt;</span> list <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">ArrayList&lt;<span class="pl-smi">String</span>&gt;</span>();
 list<span class="pl-k">.</span>add(<span class="pl-s"><span class="pl-pds">"</span>some string<span class="pl-pds">"</span></span>);
