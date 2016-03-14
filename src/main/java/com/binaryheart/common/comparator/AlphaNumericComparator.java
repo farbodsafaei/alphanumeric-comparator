@@ -1,4 +1,3 @@
-package com.binaryheart.common.comparator;
 /*
  * Copyright 2016 Farbod Safaei
  * 
@@ -14,7 +13,7 @@ package com.binaryheart.common.comparator;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+package com.binaryheart.common.comparator;
 
 import java.text.Collator;
 import java.util.Comparator;
