@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/farbodsafaei/alphanumeric-comparator.svg?branch=master)](https://travis-ci.org/farbodsafaei/alphanumeric-comparator)
 # alphanumeric-comparator
 
 An alphanumeric comparator in Java, for comparing strings in a human readable format. It uses a combination numeric and alphabetic comparisons to compare two strings. This class uses standard Java classes and is independent of any 3rd party libraries.
