@@ -89,7 +89,7 @@ public class AlphaNumericComparator implements Comparator<String> {
 	 * 
 	 * @see com.binaryheart.common.comparator.AlphaNumericComparator#AlphaNumericComparator(Locale)
 	 */
-	public AlphaNumericComparator() {
+	AlphaNumericComparator() {
 		collator = Collator.getInstance();
 	}
 
