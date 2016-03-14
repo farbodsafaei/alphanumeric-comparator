@@ -38,7 +38,7 @@ Using ```AlphaNumericComparator```, the list is correctly sorted as below:
 
 #### How To
 
-Just pass the comparator as a paramer when sorting a list:
+Just pass the comparator as a parameter when sorting a list:
 ```java
 List<String> list = new ArrayList<String>();
 list.add("some string");
