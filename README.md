@@ -46,5 +46,5 @@ list.add("some other string");
 ...
 list.sort(new AlphaNumericComparator());
 ```
-or just simply use the ```compare()``` method in AlphaNumericComparator class as needed.
+or just simply use the ```compare()``` method in ```AlphaNumericComparator``` class as needed.
  
