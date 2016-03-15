@@ -99,9 +99,14 @@ public class AlphaNumericComparator implements Comparator<String> {
 	/**
 	 * Constructor with given {@code Locale} and collator strength value
 	 * 
-	 * @param locale	Desired {@code Locale}
-	 * @param strength	Collator strength value, any of collator values from: {@link java.text.Collator#PRIMARY},
-	 * {@link java.text.Collator#SECONDARY}, {@link java.text.Collator#TERTIARY}, or {@link java.text.Collator#IDENTICAL}
+	 * @param locale	
+	 *             Desired {@code Locale}
+	 *             
+	 * @param strength	
+	 *             Collator strength value, any of collator values from: {@link java.text.Collator#PRIMARY},
+	 *             {@link java.text.Collator#SECONDARY}, {@link java.text.Collator#TERTIARY}, 
+	 *             or {@link java.text.Collator#IDENTICAL}
+	 * 
 	 * @see java.text.Collator
 	 */
 	public AlphaNumericComparator(final Locale locale, final int strength) {
@@ -112,13 +117,17 @@ public class AlphaNumericComparator implements Comparator<String> {
 	/**
 	 * Compares two given {@code String} parameters. Both string parameters will be trimmed before comparison.
 	 * 
-	 * @param s1	the first string to be compared
-	 * @param s2	the second string to be compared
-	 * @return If any of the given parameters is {@code null} or is an empty string like {@code ""}, 
-	 * {@code -1} or {@code 1} will be returned based on the order: {@code -1} will be returned if
-	 * the first parameter is {@code null} or empty, {@code 1} will be returned if the second parameter is
-	 * {@code null} or empty. When both are either {@code null} or empty or any combination of those, a {@code 0} will be
-	 * returned. 
+	 * @param s1	
+	 *             the first string to be compared
+	 * @param s2	
+	 *             the second string to be compared
+	 *             
+	 * @return     If any of the given parameters is {@code null} or is an empty string like 
+	 *             {@code ""}, {@code -1} or {@code 1} will be returned based on the order: 
+	 *             {@code -1} will be returned if the first parameter is {@code null} or empty, 
+	 *             {@code 1} will be returned if the second parameter is  {@code null} or empty. 
+	 *             When both are either {@code null} or empty or any combination of those, a 
+	 *             {@code 0} will be returned. 
 	 */
 	@Override
 	public int compare(String s1, String s2) {
