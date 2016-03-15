@@ -1,6 +1,6 @@
 # alphanumeric-comparator [![Build Status](https://travis-ci.org/farbodsafaei/alphanumeric-comparator.svg?branch=master)](https://travis-ci.org/farbodsafaei/alphanumeric-comparator)
 
-An alphanumeric comparator in Java, for comparing strings in a human readable format. It uses a combination of numeric and alphabetic comparisons to compare two strings. This class uses standard Java classes and is independent of any 3rd party libraries.
+An alphanumeric comparator in Java, for comparing and sorting strings in a more human readable format. It uses a combination of numeric and alphabetic comparisons to compare two strings. This class uses standard Java classes and is independent of any 3rd party libraries.
 
 Additionally this comparator uses ```java.text.Collator``` class to correctly sort strings containing special characters like Umlauts or similar alphabet letters in different languages, such as: **å**, **è**, **ü**, **ö**, **ø**, or **ý**.
 
@@ -38,7 +38,7 @@ Using ```AlphaNumericComparator```, the list is correctly sorted as below:
 
 #### How To
 
-Simply pass the comparator as a parameter when sorting a list:
+Simply pass the comparator as a parameter when sorting a list of strings:
 ```java
 List<String> list = new ArrayList<String>();
 list.add("some string");
@@ -46,5 +46,5 @@ list.add("some other string");
 ...
 list.sort(new AlphaNumericComparator());
 ```
-or just simply use the ```compare()``` method in ```AlphaNumericComparator``` class as needed.
+or just simply use the ```compare()``` method in ```AlphaNumericComparator``` if needed to compare two strings.
  
