@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="alphanumeric-comparator : An alphanumeric comparator in Java to simplify comparison and sorting of strings in a more human readable format">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>alphanumeric-comparator</title>
+    <meta charset="UTF-8">
+    <title>alphanumeric-comparator by farbodsafaei</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">alphanumeric-comparator</h1>
+      <h2 class="project-tagline">An alphanumeric comparator in Java to simplify comparison and sorting of strings in a more human readable format</h2>
+      <a href="https://github.com/farbodsafaei/alphanumeric-comparator" class="btn">View on GitHub</a>
+      <a href="https://github.com/farbodsafaei/alphanumeric-comparator/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/farbodsafaei/alphanumeric-comparator/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/farbodsafaei/alphanumeric-comparator">View on GitHub</a>
+    <section class="main-content">
+      <h1>
+<a id="alphanumeric-comparator-" class="anchor" href="#alphanumeric-comparator-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>alphanumeric-comparator <a href="https://travis-ci.org/farbodsafaei/alphanumeric-comparator"><img src="https://travis-ci.org/farbodsafaei/alphanumeric-comparator.svg?branch=master" alt="Build Status"></a>
+</h1>
 
-          <h1 id="project_title">alphanumeric-comparator</h1>
-          <h2 id="project_tagline">An alphanumeric comparator in Java to simplify comparison and sorting of strings in a more human readable format</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/farbodsafaei/alphanumeric-comparator/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/farbodsafaei/alphanumeric-comparator/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p><a href="https://travis-ci.org/farbodsafaei/alphanumeric-comparator"><img src="https://travis-ci.org/farbodsafaei/alphanumeric-comparator.svg?branch=master" alt="Build Status"></a></p>
-
-<h1>
-<a id="alphanumeric-comparator" class="anchor" href="#alphanumeric-comparator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>alphanumeric-comparator</h1>
-
-<p>An alphanumeric comparator in Java, for comparing strings in a human readable format. It uses a combination of numeric and alphabetic comparisons to compare two strings. This class uses standard Java classes and is independent of any 3rd party libraries.</p>
+<p>An alphanumeric comparator in Java, for comparing and sorting strings in a more human readable format. It uses a combination of numeric and alphabetic comparisons to compare two strings. This class uses standard Java classes and is independent of any 3rd party libraries.</p>
 
 <p>Additionally this comparator uses <code>java.text.Collator</code> class to correctly sort strings containing special characters like Umlauts or similar alphabet letters in different languages, such as: <strong>å</strong>, <strong>è</strong>, <strong>ü</strong>, <strong>ö</strong>, <strong>ø</strong>, or <strong>ý</strong>.</p>
 
@@ -85,7 +72,7 @@
 <h4>
 <a id="how-to" class="anchor" href="#how-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To</h4>
 
-<p>Simply pass the comparator as a parameter when sorting a list:</p>
+<p>Simply pass the comparator as a parameter when sorting a list of strings:</p>
 
 <div class="highlight highlight-source-java"><pre><span class="pl-k">List&lt;<span class="pl-smi">String</span>&gt;</span> list <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">ArrayList&lt;<span class="pl-smi">String</span>&gt;</span>();
 list<span class="pl-k">.</span>add(<span class="pl-s"><span class="pl-pds">"</span>some string<span class="pl-pds">"</span></span>);
@@ -93,19 +80,16 @@ list<span class="pl-k">.</span>add(<span class="pl-s"><span class="pl-pds">"</sp
 <span class="pl-c1">...</span>
 list<span class="pl-k">.</span>sort(<span class="pl-k">new</span> <span class="pl-smi">AlphaNumericComparator</span>());</pre></div>
 
-<p>or just simply use the <code>compare()</code> method in <code>AlphaNumericComparator</code> class as needed.</p>
-      </section>
-    </div>
+<p>or just simply use the <code>compare()</code> method in <code>AlphaNumericComparator</code> if needed to compare two strings.</p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">alphanumeric-comparator maintained by <a href="https://github.com/farbodsafaei">farbodsafaei</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/farbodsafaei/alphanumeric-comparator">alphanumeric-comparator</a> is maintained by <a href="https://github.com/farbodsafaei">farbodsafaei</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-    
+    </section>
 
+  
   </body>
 </html>
