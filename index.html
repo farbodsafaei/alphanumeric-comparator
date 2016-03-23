@@ -32,57 +32,54 @@
 
 <p>For given list of strings:</p>
 
-<ul>
-<li>file-01.doc</li>
-<li>file-2.doc</li>
-<li>file-03.doc</li>
-</ul>
+<pre><code>file-01.doc, file-2.doc, file-03.doc
+</code></pre>
 
 <p>A regular lexicographical sort, e.g. <code>java.util.Collections.sort()</code>, sorts the above list in the following order:</p>
 
-<p><strong>[file-01.doc, file-03.doc, file-2.doc]</strong></p>
+<pre><code>file-01.doc, file-03.doc, file-2.doc
+</code></pre>
 
 <p>However using <code>AlphaNumericComparator</code>, the list will be sorted in a more meaningful and readable way:</p>
 
-<p><strong>[file-01.doc, file-2.doc, file-03.doc]</strong></p>
+<pre><code>file-01.doc, file-2.doc, file-03.doc
+</code></pre>
 
 <h4>
 <a id="example-2" class="anchor" href="#example-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example #2</h4>
 
-<p>For the following list of characters/strings: </p>
+<p>For the following list of unsorted characters/strings: </p>
 
-<ul>
-<li>b</li>
-<li>e</li>
-<li>k</li>
-<li>ě</li>
-<li>f</li>
-<li>è</li>
-<li>g</li>
-</ul>
+<pre><code>b, e, k, ě, f, è, g
+</code></pre>
 
 <p>A regular lexicographical sort, e.g. <code>java.util.Collections.sort()</code>, sorts the above list in the following order:</p>
 
-<p><strong><code>b, e, f, g, k, è, ě</code></strong></p>
+<pre><code>b, e, f, g, k, è, ě
+</code></pre>
 
 <p>Using <code>AlphaNumericComparator</code>, the list is correctly sorted as below:</p>
 
-<p><strong><code>b, e, è, ě, f, g, k</code></strong></p>
+<pre><code>b, e, è, ě, f, g, k
+</code></pre>
 
 <h4>
 <a id="example-3" class="anchor" href="#example-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example #3</h4>
 
 <p>Consider the following unsorted list of words:</p>
 
-<p><strong><code>sèle, solo, solè, sola, soli, sole, sold, sila, silè, sölo, sulo, sylo, soly</code></strong></p>
+<pre><code>sèle, solo, solè, sola, soli, sole, sold, sila, silè, sölo, sulo, sylo, soly
+</code></pre>
 
 <p>Using Java <code>Collections.sort()</code> we will have:</p>
 
-<p><strong><code>sila, silè, sola, sold, sole, soli, solo, soly, solè, sulo, sylo, sèle, sölo</code></strong></p>
+<pre><code>sila, silè, sola, sold, sole, soli, solo, soly, solè, sulo, sylo, sèle, sölo
+</code></pre>
 
 <p>However with <code>AlphaNumericComparator</code> sort we will have a more accurate sorted list:</p>
 
-<p><strong><code>sèle, sila, silè, sola, sold, sole, solè, soli, solo, soly, sölo, sulo, sylo</code></strong></p>
+<pre><code>sèle, sila, silè, sola, sold, sole, solè, soli, solo, soly, sölo, sulo, sylo
+</code></pre>
 
 <h4>
 <a id="how-to" class="anchor" href="#how-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To</h4>
