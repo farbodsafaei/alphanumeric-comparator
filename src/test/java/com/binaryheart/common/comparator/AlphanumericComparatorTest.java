@@ -77,6 +77,42 @@ public class AlphanumericComparatorTest {
         Assert.assertNotEquals(Arrays.toString(defaultSorted), Arrays.toString(versionSorted));
         
     }
+    
+    @Test
+    public void collatorSortWords() {
+        List<String> list = new ArrayList<String>();
+        list.add("sèle");
+        list.add("solo");
+        list.add("solè");
+        list.add("sola");
+        list.add("soli");
+        list.add("sole");
+        list.add("sold");
+        list.add("sila");
+        list.add("silè");
+        list.add("sölo");
+        list.add("sulo");
+        list.add("sylo");
+        list.add("soly");
+
+        Collections.sort(list);
+        String[] defaultSorted = list.toArray(new String[list.size()]);
+        
+        list.sort(new AlphaNumericComparator());
+        String[] versionSorted = list.toArray(new String[list.size()]);
+
+        /*
+         * Unsorted:
+         * [sèle, solo, solè, sola, soli, sole, sold, sila, silè, sölo, sulo, sylo, soly]
+         * 
+         * Sorted output using Collections.sort():
+         * [sila, silè, sola, sold, sole, soli, solo, soly, solè, sulo, sylo, sèle, sölo]
+         * 
+         * Sorted output using AlphaNumericComparator:
+         * [sèle, sila, silè, sola, sold, sole, solè, soli, solo, soly, sölo, sulo, sylo]
+         */
+        Assert.assertNotEquals(Arrays.toString(defaultSorted), Arrays.toString(versionSorted));
+    }
 
     @Test
     public void fileNameSort() {
