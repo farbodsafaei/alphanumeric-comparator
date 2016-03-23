@@ -6,48 +6,60 @@ Additionally this comparator uses ```java.text.Collator``` class to correctly so
 
 #### Example #1
 For given list of strings:
-- file-01.doc
-- file-2.doc
-- file-03.doc
+
+```
+file-01.doc, file-2.doc, file-03.doc
+```
 
 A regular lexicographical sort, e.g. ```java.util.Collections.sort()```, sorts the above list in the following order:
 
-**[file-01.doc, file-03.doc, file-2.doc]**
+```
+file-01.doc, file-03.doc, file-2.doc
+```
 
 However using ```AlphaNumericComparator```, the list will be sorted in a more meaningful and readable way:
 
-**[file-01.doc, file-2.doc, file-03.doc]**
+```
+file-01.doc, file-2.doc, file-03.doc
+```
 
 #### Example #2
-For the following list of characters/strings: 
- * b
- * e
- * k
- * ě
- * f
- * è
- * g
+For the following list of unsorted characters/strings: 
+
+```
+b, e, k, ě, f, è, g
+```
 
 A regular lexicographical sort, e.g. ```java.util.Collections.sort()```, sorts the above list in the following order:
 
-**```b, e, f, g, k, è, ě```**
+```
+b, e, f, g, k, è, ě
+```
 
 Using ```AlphaNumericComparator```, the list is correctly sorted as below:
 
-**```b, e, è, ě, f, g, k```**
+```
+b, e, è, ě, f, g, k
+```
 
 #### Example #3
 Consider the following unsorted list of words:
 
-**```sèle, solo, solè, sola, soli, sole, sold, sila, silè, sölo, sulo, sylo, soly```**
+```
+sèle, solo, solè, sola, soli, sole, sold, sila, silè, sölo, sulo, sylo, soly
+```
 
 Using Java ```Collections.sort()``` we will have:
 
-**```sila, silè, sola, sold, sole, soli, solo, soly, solè, sulo, sylo, sèle, sölo```**
+```
+sila, silè, sola, sold, sole, soli, solo, soly, solè, sulo, sylo, sèle, sölo
+```
 
 However with ```AlphaNumericComparator``` sort we will have a more accurate sorted list:
 
-**```sèle, sila, silè, sola, sold, sole, solè, soli, solo, soly, sölo, sulo, sylo```**
+```
+sèle, sila, silè, sola, sold, sole, solè, soli, solo, soly, sölo, sulo, sylo
+```
 
 #### How To
 
