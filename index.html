@@ -63,11 +63,26 @@
 
 <p>A regular lexicographical sort, e.g. <code>java.util.Collections.sort()</code>, sorts the above list in the following order:</p>
 
-<p><strong>[b, e, f, g, k, è, ě]</strong></p>
+<p><strong><code>b, e, f, g, k, è, ě</code></strong></p>
 
 <p>Using <code>AlphaNumericComparator</code>, the list is correctly sorted as below:</p>
 
-<p><strong>[b, e, è, ě, f, g, k]</strong></p>
+<p><strong><code>b, e, è, ě, f, g, k</code></strong></p>
+
+<h4>
+<a id="example-3" class="anchor" href="#example-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example #3</h4>
+
+<p>Consider the following unsorted list of words:</p>
+
+<p><strong><code>sèle, solo, solè, sola, soli, sole, sold, sila, silè, sölo, sulo, sylo, soly</code></strong></p>
+
+<p>Using Java <code>Collections.sort()</code> we will have:</p>
+
+<p><strong><code>sila, silè, sola, sold, sole, soli, solo, soly, solè, sulo, sylo, sèle, sölo</code></strong></p>
+
+<p>However with <code>AlphaNumericComparator</code> sort we will have a more accurate sorted list:</p>
+
+<p><strong><code>sèle, sila, silè, sola, sold, sole, solè, soli, solo, soly, sölo, sulo, sylo</code></strong></p>
 
 <h4>
 <a id="how-to" class="anchor" href="#how-to" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To</h4>
