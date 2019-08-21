@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.binaryheart.common</groupId>
 	<artifactId>alphanumeric-comparator</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>alphanumeric-comparator</name>
 	<description>An alphanumeric comparator to simplify comparison and sorting of strings in a more human readable format</description>
 	<url>https://github.com/farbodsafaei/alphanumeric-comparator</url>
